@@ -4,6 +4,12 @@ import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
 export default {
   name: 'MyApp',
+
+  components: {
+    AppHeader,
+    AppMain,
+    AppFooter,
+  }
 }
 
 </script>
@@ -17,7 +23,8 @@ export default {
     <AppMain />
   </main>
 
-  <footer>
+
+  <footer class="background-color-black">
     <AppFooter />
   </footer>
 </template>
