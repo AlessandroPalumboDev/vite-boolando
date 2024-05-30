@@ -29,7 +29,7 @@ export default {
   </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 header {
   position: fixed;
   z-index: 1;
