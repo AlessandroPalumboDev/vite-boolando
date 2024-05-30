@@ -5,7 +5,7 @@
 }
 
 .logo {
-    height: 50%;
+    height: calc(variables.$full-height / 2);
 }
 
 .col50 .logo {
@@ -32,15 +32,15 @@ a {
 }
 
 .row-header {
-    width: 100%;
+    width: variables.$full-width;
 }
 
 .col25 {
-    width: 25%;
+    width: calc(variables.$full-width / 4);
 }
 
 .col50 {
-    width: 50%;
+    width: calc(variables.$full-width / 2);
 }
 
 /* CLASSI DI UTILITY */

@@ -12,7 +12,7 @@
 
 .col33 {
     margin: 10px 5px;
-    width: calc(100% / 3 - 20px);
+    width: calc(variables.$full-width / 3 - 20px);
 }
 
 .d-flex {
@@ -36,7 +36,7 @@
 }
 
 .img-prodotto {
-    width: 100%;
+    width: variables.$full-width;
     display: inline-block;
 }
 
@@ -62,7 +62,7 @@
 
 
 .img-prodotto-secondo {
-    width: 100%;
+    width: variables.$full-width;
     display: none;
 }
 

@@ -7,5 +7,32 @@
 }
 
 body {
-  height: 100%; // $full-height
+  height: variables.$full-height; // non height: $full-height
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: variables.$full-width;
+  background-color: variables.$bg-orange;
+  padding: 10px 20px;
+}
+
+main {
+  margin: auto;
+  margin-top: 65px;
+  margin-bottom: 80px;
+}
+
+footer {
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: variables.$full-width;
+  padding: 20px;
+  background-color: variables.$bg-black;
+
 }

@@ -31,11 +31,11 @@ a {
 }
 
 .row-header {
-    width: 100%;
+    width: variables.$full-width;
 }
 
 .col50 {
-    width: 50%;
+    width: calc(variables.$full-width / 2);
 }
 
 /* CLASSI DI UTILITY */
