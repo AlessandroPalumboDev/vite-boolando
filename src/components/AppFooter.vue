@@ -31,3 +31,57 @@ export default {
         </div>
     </div>
 </template>
+
+<style scoped>
+li {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+
+.color-white {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.img-piccole {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(11%) hue-rotate(61deg) brightness(104%) contrast(100%);
+}
+
+
+
+
+/* CLASSI DI LAYOUT */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row-header {
+    width: 100%;
+}
+
+.col50 {
+    width: 50%;
+}
+
+/* CLASSI DI UTILITY */
+.d-flex {
+    display: flex;
+}
+
+.j-c-right {
+    justify-content: right;
+
+}
+
+.txt-a-right {
+    text-align: right;
+}
+</style>
