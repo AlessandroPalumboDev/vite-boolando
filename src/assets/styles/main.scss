@@ -52,14 +52,13 @@
 
 .prodotto:hover .cuore {
     display: inline-block;
-}
 
-.cuore:hover {
-    color: red;
-    display: inline-block;
-    cursor: pointer
+    &:hover {
+        color: red;
+        display: inline-block;
+        cursor: pointer
+    }
 }
-
 
 .img-prodotto-secondo {
     width: variables.$full-width;

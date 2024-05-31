@@ -6,15 +6,31 @@
   box-sizing: border-box;
 }
 
-body {
-  height: variables.$full-height; // non height: $full-height
-}
-
-header {
+@mixin header-position {
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
+}
+
+@mixin footer-position {
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+}
+
+body {
+  height: variables.$full-height; // non height: $full-height
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+header {
+  @include header-position();
   width: variables.$full-width;
   background-color: variables.$bg-orange;
   padding: 10px 20px;
@@ -27,10 +43,7 @@ main {
 }
 
 footer {
-  position: fixed;
-  z-index: 1;
-  bottom: 0;
-  left: 0;
+  @include footer-position;
   width: variables.$full-width;
   padding: 20px;
   background-color: variables.$bg-black;

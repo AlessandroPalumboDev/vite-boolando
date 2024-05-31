@@ -8,18 +8,9 @@
     height: calc(variables.$full-height / 2);
 }
 
-.col50 .logo {
-    width: 30%;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
 .img-piccole {
-    width: 20px;
-    height: 20px;
+    width: variables.$img-piccole;
+    height: variables.$img-piccole;
     filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(11%) hue-rotate(61deg) brightness(104%) contrast(100%);
 }
 
@@ -41,6 +32,10 @@ a {
 
 .col50 {
     width: calc(variables.$full-width / 2);
+
+    .logo {
+        width: 30%;
+    }
 }
 
 /* CLASSI DI UTILITY */
