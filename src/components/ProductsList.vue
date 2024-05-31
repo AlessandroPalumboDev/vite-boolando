@@ -17,8 +17,8 @@ export default{
 <div class="col33" v-for="(element, index) in products" :key="index">
 
     <div class="prodotto position-relative">
-        <img class="img-prodotto" :src="product.frontImage" alt="prodotto-1">
-        <img class="img-prodotto-secondo" :src="product.backImage" alt="prodotto-1-bis">
+        <img class="img-prodotto" :src="element.frontImage" alt="prodotto-1">
+        <img class="img-prodotto-secondo" :src="element.backImage" alt="prodotto-1-bis">
         <input class="cuore position-absolute" type="button" value="&hearts;">
         <div class="etichette">
             <span class="percentuale-sconto">{{ element.badges }}</span>
